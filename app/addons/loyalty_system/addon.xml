@@ -36,5 +36,8 @@
         'loyalty_points' INT(11) NOT NULL,
         'data' DATE NULL DEFAULT NULL,
         PRIMARY KEY ('id_loyalty_system'))
+
+        ALTER TABLE 'cscart2'.'cscart_loyalty_system' 
+        ADD COLUMN 'fk_user_id' INT(11) NULL DEFAULT NULL AFTER 'data';
     </queries>   
 </addon> 
